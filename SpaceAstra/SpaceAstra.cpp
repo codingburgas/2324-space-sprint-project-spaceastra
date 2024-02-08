@@ -1,20 +1,43 @@
-// SpaceAstra.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include <SFML/Graphics.hpp>
+#include "space_rendering.h"
 
-#include <iostream>
+int planet_data[5][3] =
+{
+    { 100, 100, 30 },
+    { 500, 300, 50 },
+    { 300, 500, 40 },
+    { 200, 140, 10 },
+    { 230, 900, 100 }
+};
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    sf::RenderWindow window(sf::VideoMode(1200, 800), "SpaceAstra", sf::Style::Close);
+    window.setFramerateLimit(120);
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        for (int i = 0; i <= 5; i++)
+        {
+            planet_data[i][1] += 1;
+            planet_data[i][0] += 1;
+            if (planet_data[i][0] >= 1200)
+                planet_data[i][0] = 0;
+            if (planet_data[i][1] >= 800)
+                planet_data[i][1] = 0;
+        }
+
+        window.clear();
+        draw_planets(&window, planet_data);
+        window.display();
+    }
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

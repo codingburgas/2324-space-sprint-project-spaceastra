@@ -18,5 +18,13 @@
     <ClCompile Include="SpaceAstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="space_rendering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="space_rendering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
