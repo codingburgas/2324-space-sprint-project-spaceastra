@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "space_rendering.h"
+#include "../headers/space_rendering.h"
 
 int planet_data[5][3] =
 {

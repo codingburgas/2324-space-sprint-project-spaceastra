@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SpaceAstra.cpp">
+    <ClCompile Include="src\SpaceAstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="space_rendering.cpp">
+    <ClCompile Include="src\space_rendering.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="space_rendering.h">
+    <ClInclude Include="headers\space_rendering.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

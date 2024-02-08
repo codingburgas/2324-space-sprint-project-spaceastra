@@ -1,5 +1,5 @@
 #include<SFML/Graphics.hpp>
-#include "space_rendering.h"
+#include "../headers/space_rendering.h"
 
 //function to render the planets
 void draw_planets(sf::RenderWindow* window ,int arr[5][3])
