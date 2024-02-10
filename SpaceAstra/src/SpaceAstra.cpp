@@ -1,13 +1,25 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include "../headers/space_rendering.h"
+#include "../headers/physics_calculation.h"
+#include "../headers/movement_code.h"
 
-int planet_data[5][3] =
+//array 0 is x coord
+//array 1 is y coord
+//array 2 is radius
+//array 3 is mass
+//array 4 is velocity
+//array 5 is direction
+//array 6 is next frame velocity
+//array 7 is next frame direction of velocity
+
+float planet_data[5][8] =
 {
-    { 100, 100, 30 },
-    { 500, 300, 50 },
-    { 300, 500, 40 },
-    { 200, 140, 10 },
-    { 230, 900, 100 }
+    { 100, 100, 30, 5, 6, 100, 0, 0 },
+    { 500, 300, 50, 40, 3, 24, 0, 0  },
+    { 300, 500, 40, 33, 5, 26, 0, 0  },
+    { 200, 140, 10, 20, 30, 330, 0, 0  },
+    { 230, 900, 100, 80, 20, 270, 0, 0  }
 };
 
 int main()
@@ -24,16 +36,10 @@ int main()
                 window.close();
         }
 
-        for (int i = 0; i <= 5; i++)
-        {
-            planet_data[i][1] += 1;
-            planet_data[i][0] += 1;
-            if (planet_data[i][0] >= 1200)
-                planet_data[i][0] = 0;
-            if (planet_data[i][1] >= 800)
-                planet_data[i][1] = 0;
-        }
-
+        physics_frame(planet_data);
+        std::cout << planet_data[1][7] << " " << 2 << std::endl;
+        move_planets(planet_data);
+        std::cout << planet_data[1][7] << std::endl;
         window.clear();
         draw_planets(&window, planet_data);
         window.display();

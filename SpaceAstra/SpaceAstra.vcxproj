@@ -130,10 +130,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\movement_code.cpp" />
+    <ClCompile Include="src\physics_calculation.cpp" />
     <ClCompile Include="src\space_rendering.cpp" />
     <ClCompile Include="src\SpaceAstra.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\movement_code.h" />
+    <ClInclude Include="headers\physics_calculation.h" />
     <ClInclude Include="headers\space_rendering.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,2 +1,2 @@
 #pragma once
-void draw_planets(sf::RenderWindow* window, int arr[5][3]);
+void draw_planets(sf::RenderWindow* window, float arr[5][8]);
