@@ -18,7 +18,7 @@ float calc_direction(int x1, int x2, int y1, int y2)
 	float result = atan2(xdiff, ydiff);
 	if (result < 0)
 	{
-		result += PI*2;
+		result += PI * 2;
 	}
 	return result;
 }
@@ -42,7 +42,7 @@ void physics_frame(float planet_data[5][8])
 				int y2 = planet_data[j][1];
 				int m1 = planet_data[i][3];
 				int m2 = planet_data[j][3];
-				velocity_bffr[i][j] = calc_attraction(m1, m2 ,sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) * 1.0));
+				velocity_bffr[i][j] = calc_attraction(m1, m2, sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) * 1.0));
 				direction_bffr[i][j] = calc_direction(x1, x2, y1, y2);
 			}
 		}
@@ -57,8 +57,8 @@ void physics_frame(float planet_data[5][8])
 		{
 			if (i != j)
 			{
-				s =+ sin(direction_bffr[i][j]);
-				c =+ cos(direction_bffr[i][j]);
+				s = +sin(direction_bffr[i][j]);
+				c = +cos(direction_bffr[i][j]);
 			}
 		}
 		s /= 4;
@@ -80,19 +80,19 @@ void physics_frame(float planet_data[5][8])
 			std::cout << planet_data[i][7] << " " << i << std::endl;
 		}
 
-	//averages out speed
-		for (int i = 0; i < 5; i++)
+		//averages out speed
+		float v = 0;
+		for (int j = 0; j < 5; j++)
 		{
-			float v = 0;
-			for (int j = 0; j < 5; j++)
+			if (i != j)
 			{
-				if (i != j)
-				{
-					v += velocity_bffr[i][j];
-				}
+				v += velocity_bffr[i][j];
 			}
-			v /= 4;
-			planet_data[i][7] = v;
 		}
+		v /= 4;
+		//convert from meters/second to pixels/frame
+		v /= 100;
+		std::cout << "velocity: " << v << std::endl;
+		planet_data[i][6] = v;
 	}
 }
