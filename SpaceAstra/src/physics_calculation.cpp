@@ -7,7 +7,7 @@
 //calculates the force of attraction
 float calc_attraction(int mass1, int mass2, float dist)
 {
-	return (mass1 * mass2) / dist * dist;
+	return ((mass1 * mass2) / dist * dist)/mass1;
 }
 
 //calculates the position (x y coords) of the second object relative to the first
@@ -66,17 +66,17 @@ void physics_frame(float planet_data[5][8])
 
 		if (s > 0 && c > 0)
 		{
-			planet_data[i][7] = atan(s / c) * 180 / PI;
+			planet_data[i][7] = atan(s / c) * -180 / PI;
 			std::cout << planet_data[i][7] << " " << i << std::endl;
 		}
 		else if (c < 0)
 		{
-			planet_data[i][7] = atan(s / c) * 180 / PI + 180;
+			planet_data[i][7] = atan(s / c) * -180 / PI + 180;
 			std::cout << planet_data[i][7] << " " << i << std::endl;
 		}
 		else if (s < 0 && c > 0)
 		{
-			planet_data[i][7] = atan(s / c) * 180 / PI + 360;
+			planet_data[i][7] = atan(s / c) * -180 / PI + 360;
 			std::cout << planet_data[i][7] << " " << i << std::endl;
 		}
 
@@ -90,7 +90,7 @@ void physics_frame(float planet_data[5][8])
 			}
 		}
 		v /= 4;
-		//convert from meters/second to pixels/frame
+		//convert from meters to pixels
 		v /= 100;
 		std::cout << "velocity: " << v << std::endl;
 		planet_data[i][6] = v;
