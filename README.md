@@ -10,5 +10,7 @@ The development of our Project is to educate and revise people from the program 
  ### Word Documentation: 
 # :crown:Contributors:
 ### - 🟦 Scrum Trainer - Nikolay Zhelyazkov https://github.com/NSZhelyazkov22
-### - 🟪 First Backend Developer - Stefan Radev https://github.com/SDRadev22
-### - 🟨 Second Backend Developer - Kristiqn Dimitrov https://github.com/KDDimitrov22
+### - 🟪 First Backend Developer - Stefan Radev: https://github.com/SDRadev22
+### - 🟨 Second Backend Developer - Kristiqn Dimitrov: https://github.com/KDDimitrov22
+### - 🟥 Third Backend Developer - Stiliqn Gochev: https://github.com/SNGochev
+### - ⬛ Mentor - Ivan Delchilov: https://github.com/ISDelchilov21
