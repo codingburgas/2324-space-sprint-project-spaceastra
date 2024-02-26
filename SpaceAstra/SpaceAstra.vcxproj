@@ -134,7 +134,6 @@
     <ClCompile Include="src\physics_calculation.cpp" />
     <ClCompile Include="src\space_rendering.cpp" />
     <ClCompile Include="src\SpaceAstra.cpp" />
-    <ClCompile Include="velocity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\movement_code.h" />
