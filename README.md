@@ -7,7 +7,9 @@ The development of our Project is to educate and revise people from the program 
  ### 2. ⚙️SFML https://www.sfml-dev.org/
  ### 3. 🔈Discord (Communication Device) https://discord.com/
  # 📄 Documentation
+ <p>
  ### Word Documentation: 
+ </p>
 # :crown:Contributors:
 ### - 🟦 Scrum Trainer - Nikolay Zhelyazkov https://github.com/NSZhelyazkov22
 ### - 🟪 First Backend Developer - Stefan Radev: https://github.com/SDRadev22
