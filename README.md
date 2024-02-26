@@ -3,11 +3,15 @@ Our project's purpose is to visualise 2-D Objects with gravitational force , whi
 # ☄️ **Why did we develop it, what was our motivation?**
 The development of our Project is to educate and revise people from the program we have made by using formulas and understanding the 2 dimensional world from here.It is also our task to ensure how it looks like a simulation and may ensure teenagers to understand the app easily and so physics. It should be said that in the next few generations, the world will change it's habit of life and might be great to know some experience with programming.
  # ℹ️ **Contributing Services:**
- ### 1. <img src='Additional Files/Pictures/VSlogo.png' width='50' position='center'> https://visualstudio.microsoft.com/
- ### 2. <img src='Additional Files/Pictures/SFML Logo.png' width='100' position='center'> https://www.sfml-dev.org/ 
- ### 3. <img src='Additional Files/Pictures/DiscordLogo.png' width='40' position='center'>(Communication Device) https://discord.com/
+ <a href="https://visualstudio.microsoft.com/"><img src="Additional Files/Pictures/VSlogo.png" width='100'></a>
+ <a href="https://cplusplus.com/"><img src="Additional Files/Pictures/C++.png" width='60'></a>
+ <img src='Additional Files/Pictures/SFML Logo.png' width='200' position='center'>
+<a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="Additional Files/Pictures/TeamsLogo.png" width='70'></a>
+<a href="https://www.microsoft.com/bg-bg/microsoft-365/word"><img src="Additional Files/Pictures/WordLogo.png" width='70'></a>
+<a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="Additional Files/Pictures/PowerPoint.png" width='70'></a>
+
  # 📄 Documentation
-### Word Documentation:
+###   <img src="Additional Files/Pictures/WordLogo.png" width='27'> Documentation
 # :crown:Contributors:
 ### - 🟥 Scrum Trainer - Nikolay Zhelyazkov https://github.com/NSZhelyazkov22
 ### - 🟥 First Backend Developer - Stefan Radev: https://github.com/SDRadev22
