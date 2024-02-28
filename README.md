@@ -11,7 +11,8 @@ The development of our Project is to educate and revise people from the program 
 <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="Additional Files/Pictures/PowerPoint.png" width='70'></a>
 
  # 📄 Documentation
-###   <img src="Additional Files/Pictures/WordLogo.png" width='27'> Documentation
+###   <img src="Additional Files/Pictures/WordLogo.png" width='27'> <a href="Additional Files/Files/Documentation.docx">Documentation</a>
+###   <img src="Additional Files/Pictures/PowerPoint.png" width='27'> <a href="Additional Files/Files/Presentation.pptx">Presentation</a>
 # :crown:Contributors:
 ### - 🟥 Scrum Trainer - Nikolay Zhelyazkov https://github.com/NSZhelyazkov22
 ### - 🟥 First Backend Developer - Stefan Radev: https://github.com/SDRadev22
