@@ -5,7 +5,7 @@ The development of our Project is to educate and revise people from the program 
  # ℹ️ **Contributing Services:**
  <a href="https://visualstudio.microsoft.com/"><img src="Additional Files/Pictures/VSlogo.png" width='100'></a>
  <a href="https://cplusplus.com/"><img src="Additional Files/Pictures/C++.png" width='60'></a>
- <img src='Additional Files/Pictures/SFML Logo.png' width='200' position='center'>
+ <img src='Additional Files/Pictures/raylib.png' width='70' position='center'>
 <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in"><img src="Additional Files/Pictures/TeamsLogo.png" width='70'></a>
 <a href="https://www.microsoft.com/bg-bg/microsoft-365/word"><img src="Additional Files/Pictures/WordLogo.png" width='70'></a>
 <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="Additional Files/Pictures/PowerPoint.png" width='70'></a>
