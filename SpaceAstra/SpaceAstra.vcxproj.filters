@@ -13,30 +13,40 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Space_rendering">
+      <UniqueIdentifier>{766f29d0-d5ab-4381-a625-e6ad3778df19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{b2004b37-05de-455d-b23e-8137144d5642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{915ad0b6-c459-40b3-8571-fa8c5e778c1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SpaceAstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\space_rendering.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Space_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="space_rendering2.cpp">
+      <Filter>Space_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="physics_calculation3.cpp">
+      <Filter>Physics</Filter>
     </ClCompile>
     <ClCompile Include="src\physics_calculation.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Physics</Filter>
     </ClCompile>
-    <ClCompile Include="src\movement_code.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="physics_calculation2.cpp">
+      <Filter>Physics</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="headers\space_rendering.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\physics_calculation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="headers\movement_code.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="src\Ball.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

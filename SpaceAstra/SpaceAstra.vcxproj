@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Program Files\SFML-2.6.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\C++ Libraries\vcpkg\packages\raylib_x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Program Files\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics.lib;sfml-window.lib;sfml-system.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\C++ Libraries\vcpkg\packages\raylib_x64-windows\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);raylib.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,15 +130,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\movement_code.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="physics_calculation2.cpp" />
+    <ClCompile Include="physics_calculation3.cpp" />
+    <ClCompile Include="space_rendering2.cpp" />
+    <ClCompile Include="src\Ball.cpp" />
     <ClCompile Include="src\physics_calculation.cpp" />
     <ClCompile Include="src\space_rendering.cpp" />
     <ClCompile Include="src\SpaceAstra.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="headers\movement_code.h" />
-    <ClInclude Include="headers\physics_calculation.h" />
-    <ClInclude Include="headers\space_rendering.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
